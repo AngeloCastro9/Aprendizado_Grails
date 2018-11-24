@@ -4,21 +4,10 @@ grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'comum.UsuarioP
 grails.plugin.springsecurity.authority.className = 'comum.Permissao'
 grails.plugin.springsecurity.controllerAnnotations.staticRules = [
       [pattern:  '/areaRestrita/logar',  access:          ['permitAll']],
-//       [pattern:  '/areaRestrita/admin',  access:          ['permitAll']],
-//	 [pattern: '/produto/index',               access: ['permitAll']],
-//	  [pattern: '/produto/adicionar',               access: ['permitAll']],
-//	  [pattern: '/produto/alterar',               access: ['permitAll']],
-//	  [pattern: '/produto/excluir',               access: ['permitAll']],
-//	  [pattern: '/controlePermissao/**',               access: ['permitAll']],
-//      [pattern: '/controlePermissao/index',               access: ['permitAll']],
-//      [pattern: '/controlePermissao/salvarUsuario',               access: ['permitAll']],
-//      [pattern: '/controlePermissao/excluirUsuario',               access: ['permitAll']],
-//      [pattern: '/controlePermissao/salvarPermissao',               access: ['permitAll']],
-//      [pattern: '/controlePermissao/excluirPermissao',               access: ['permitAll']],
-//      [pattern: '/controlePermissao/**',               access: ['permitAll']],
  [pattern: '/produto/**', access: ['ROLE_ADMIN', 'isFullyAuthenticated()']],
 [pattern: '/areaRestrita/**', access: ['ROLE_ADMIN', 'isFullyAuthenticated()']],
 [pattern: '/controlePermissao/**', access: ['ROLE_ADMIN', 'isFullyAuthenticated()']],
+[pattern: '/consulta/**', access: ['ROLE_ADMIN', 'isFullyAuthenticated()']],
 
 	[pattern: '/',               access: ['permitAll']],
 	[pattern: '/error',          access: ['permitAll']],
