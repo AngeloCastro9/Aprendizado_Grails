@@ -105,7 +105,7 @@ environments:
     test:
         dataSource:
             dbCreate: update
-            url: "jdbc:mysql://localhost/restaurante?useSSL=false"
+            url: "jdbc:mysql://localhost/restauranteteste?useSSL=false"
     production:
         dataSource:
             dbCreate: none
